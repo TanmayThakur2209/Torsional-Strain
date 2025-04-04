@@ -32,7 +32,7 @@ const ShearStress = () => {
     <div className="flex flex-col items-center justify-center ">
       <img
         src={shearStressImg}
-        className="w-1/6 m-5"
+        className="w-1/7 m-5"
         alt="Shear Stress Formula"
       />
 

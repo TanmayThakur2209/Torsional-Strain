@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function NavigationBar() {
   return (
-    <header className="bg-black opacity-90 text-amber-50 font-montserrat p-4">
+    <header className="bg-black opacity-90 text-amber-50 font-montserrat ">
       <nav className="flex items-center justify-between">
 
         <div className="relative inline-flex items-center justify-center m-5 overflow-hidden font-medium tracking-tighter text-white rounded-lg group">
