@@ -19,14 +19,14 @@ function NavigationBar() {
         <div className="space-x-6">
           <Link
             to="/CalculationPage"
-            className="text-xl px-4 py-2 rounded-lg transition duration-300 hover:bg-[#110552]"
+            className="text-xl ml-5 px-5 py-2 rounded-lg transition duration-300 hover:bg-[#110552]"
           >
             Calculation
           </Link>
 
           <Link
             to="/About"
-            className="text-xl px-4 py-2 rounded-lg transition duration-300 hover:bg-[#110552]"
+            className="text-xl px-5 mr-10 py-2 rounded-lg transition duration-300 hover:bg-[#110552]"
           >
             About
           </Link>

@@ -6,7 +6,7 @@ import shearStrainGif from "../assets/Shear Strain.gif";
 
 function CalculationPage() {
   return (
-    <div className="flex flex-wrap justify-center items-center flex-col sm:flex-row">
+    <div className="flex flex-wrap justify-center items-center flex-col md:flex-row">
 
       <Link
         to="/ShearStress"
