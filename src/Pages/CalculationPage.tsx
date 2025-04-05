@@ -1,4 +1,8 @@
 import { Link } from "react-router-dom";
+import ShearStressGif from "../assets/Shear Stress.gif";
+import angleOfTorsionGif from "../assets/Angle of Torsion.gif";
+import shearStrainGif from "../assets/Shear Strain.gif";
+
 
 function CalculationPage() {
   return (
@@ -9,7 +13,7 @@ function CalculationPage() {
         className="w-1/4 max-w-[600px] bg-[#000000] m-5 p-1 text-white rounded-t-xl text-center transition duration-300 hover:scale-110"
       >
         <img
-          src="src/assets/Shear Stress.gif"
+          src={ShearStressGif}
           className="rounded-t-xl"
           alt="Shear Stress"
         />
@@ -21,7 +25,7 @@ function CalculationPage() {
         className="w-1/4 max-w-[600px] bg-[#000000] text-white rounded-t-xl p-1 text-center m-5 transition duration-300 hover:scale-110"
       >
         <img
-          src="src/assets/Angle of Torsion.gif"
+          src={angleOfTorsionGif}
           className="rounded-t-xl"
           alt="Angle of Torsion"
         />
@@ -33,7 +37,7 @@ function CalculationPage() {
         className="w-1/4 max-w-[600px] bg-[#000000] text-white text-center m-5 rounded-t-xl p-1 transition duration-300 hover:scale-110"
       >
         <img
-          src="src/assets/Shear Strain.gif"
+         src={shearStrainGif}
           className="rounded-t-xl"
           alt="Shear Strain"
         />
