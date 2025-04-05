@@ -5,8 +5,25 @@ function HomePage() {
     return (
     <div className="h-screen w-screen">
     <div className="flex-col flex mx-auto mt-5 justify-center items-center rounded-2xl backdrop-blur-xl rounded-6xl w-2/3 bg-[#00000070] text-center p-5 ">
-      <div className="text-xl font-bold mt-10 font-times text-left text-[#ffffff]">Torsional strain occurs when a rod or shaft is subjected to a torque, causing it to twist or deform. 
-      A circular rod is subjected to a torque T loading at one end.  The angular deflection q of the rod is measured by a dual test indicator. <br/> It is proportional to the torque T applied on the rod. Also it is proportional to the length of specimen L, and inverse proportional to the polar area moment of inertia J of the rod. 
+      <div className="text-xl mt-10 font-times text-left text-[#ffffff]">
+      Torsional strain is the angular deformation that occurs in a material (like a rod, shaft, or beam) when it's subjected to torque — a twisting force.
+
+In simple terms: When you twist something, it doesn't stay the same. It deforms — that twist is torsional strain. <br/>
+Torsional strain is crucial in engineering, mechanics, and design because it tells us:<br/><br/>
+
+1. How much a structure or material can twist before failing<br/>
+We don't want bridges, gears, or shafts snapping due to excessive twisting.<br/><br/>
+
+2. How materials behave under torque<br/>
+Understanding torsional strain helps in choosing the right material (e.g., steel vs. aluminum).<br/><br/>
+
+3. It's used in real-world systems:
+Car axles, propeller shafts, steering rods, turbines — all experience torque.
+
+Engineers calculate torsional strain to ensure they can withstand real-world forces.
+
+
+
       </div>
 
 <div className="relative inline-flex items-center justify-center m-5 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group">
