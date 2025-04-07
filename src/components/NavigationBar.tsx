@@ -10,7 +10,7 @@ function NavigationBar() {
         <span className="absolute inset-0 w-full h-full  rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
         <Link
           to="/" 
-          className="text-5xl py-2.5 px-4 rounded-lg z-10  "
+          className="text-5xl py-2.5 px-4 rounded-lg z-10 w-1/4 "
         >
           Torsional Strain
         </Link>
