@@ -14,8 +14,7 @@
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
   ],
-  "include": [
-    "src",
-    "src/types"
-  ]
+  "include": ["src"],
+  "files": []
+  
 }
