@@ -9,8 +9,6 @@
     "declaration": false,
     "outDir": "./dist"
   },
-  "include": ["src"]
-}
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
@@ -20,4 +18,4 @@
     "src",
     "src/types"
   ]
-
+}
