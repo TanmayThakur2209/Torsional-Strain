@@ -4,7 +4,17 @@
     "lib": ["DOM", "ES2015", "ES2016", "ES2017", "ES2018", "ESNext"],
     "module": "ESNext",
     "moduleResolution": "Node",
-    "skipLibCheck": true 
+    "skipLibCheck": true,
+    {
+      "compilerOptions": {
+    -    "composite": true,
+    +    "composite": false,
+    -    "declaration": true,
+    +    "declaration": false,
+        "outDir": "./dist",
+      },
+      "include": ["src"]
+    } 
   },
   "files": [],
   "references": [
