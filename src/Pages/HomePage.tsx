@@ -22,8 +22,6 @@ Car axles, propeller shafts, steering rods, turbines — all experience torque.
 
 Engineers calculate torsional strain to ensure they can withstand real-world forces.
 
-
-
       </div>
 
 <div className="relative inline-flex items-center justify-center m-5 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group">

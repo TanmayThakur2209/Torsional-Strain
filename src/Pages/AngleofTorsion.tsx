@@ -6,6 +6,7 @@ const AngleofTorsion = () => {
   const [Torque, setTorque] = useState<number | null>(null);
   const [PMOI, setPMOI] = useState<number | null>(null);
   const [SM, setSM] = useState<number | null>(null);
+  const [showResult, setShowResult] = useState(false);
 
   const shearStrain =
     Length !== null &&
@@ -18,6 +19,7 @@ const AngleofTorsion = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setShowResult(true);
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -28,6 +30,7 @@ const AngleofTorsion = () => {
     if (name === "Torque") setTorque(numValue);
     if (name === "SM") setSM(numValue);
     if (name === "PMOI") setPMOI(numValue);
+    setShowResult(false); 
   };
 
   return (
@@ -91,7 +94,7 @@ const AngleofTorsion = () => {
         </button>
       </form>
 
-      {shearStrain !== null && (
+      {showResult && shearStrain !== null && (
         <p className="mt-4 text-lg text-[#ffffff] font-semibold p-2 rounded-2xl bg-[#070a65]">
           Shear Stain (θ):{" "}
           <span className="text-[#ffffff]">{shearStrain} N/m²</span>

@@ -5,6 +5,7 @@ const ShearStrain = () => {
   const [Length, setL] = useState<number | null>(null);
   const [Theta, setTheta] = useState<number | null>(null);
   const [Distance, setD] = useState<number | null>(null);
+  const [showResult, setShowResult] = useState(false);
 
   const shearStrain =
     Length !== null &&
@@ -16,6 +17,7 @@ const ShearStrain = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setShowResult(true);
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -25,6 +27,7 @@ const ShearStrain = () => {
     if (name === "Length") setL(numValue);
     if (name === "Theta") setTheta(numValue);
     if (name === "Distance") setD(numValue);
+    setShowResult(false); 
   };
 
   return (
@@ -79,7 +82,7 @@ const ShearStrain = () => {
         </button>
       </form>
 
-      {shearStrain !== null && (
+      {showResult && shearStrain !== null && (
         <p className="mt-4 text-lg text-[#ffffff] font-semibold p-2 rounded-2xl bg-[#070a65]">
           Shear Stain (γ):{" "}
           <span className="text-[#ffffff]">{shearStrain} N/m²</span>

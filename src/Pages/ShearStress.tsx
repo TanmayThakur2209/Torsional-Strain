@@ -5,6 +5,7 @@ const ShearStress = () => {
   const [Torque, setT] = useState<number | null>(null);
   const [PMOI, setPMOI] = useState<number | null>(null);
   const [Distance, setD] = useState<number | null>(null);
+  const [showResult, setShowResult] = useState(false);
 
   const shearStress =
     Torque !== null &&
@@ -16,7 +17,7 @@ const ShearStress = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Torque:", Torque, "PMOI:", PMOI, "Distance:", Distance);
+    setShowResult(true);
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -26,6 +27,7 @@ const ShearStress = () => {
     if (name === "Torque") setT(numValue);
     if (name === "PMOI") setPMOI(numValue);
     if (name === "Distance") setD(numValue);
+    setShowResult(false); 
   };
 
   return (
@@ -80,7 +82,7 @@ const ShearStress = () => {
         </button>
       </form>
 
-      {shearStress !== null && (
+      {showResult && shearStress !== null && (
         <p className="mt-4 text-lg text-[#ffffff] font-semibold p-2 rounded-2xl bg-[#070a65]">
           Shear Stress (τ):{" "}
           <span className="text-[#ffffff]">{shearStress} N/m²</span>
