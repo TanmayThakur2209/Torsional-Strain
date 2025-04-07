@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 function HomePage() {
   const navigate = useNavigate();
     return (
-    <div className="h-screen w-screen overflow-y">
+    <div className="h-screen w-screen">
     <div className="flex-col flex mx-auto mt-5 justify-center items-center rounded-2xl backdrop-blur-xl rounded-6xl w-2/3 bg-[#00000070] text-center p-5 ">
       <div className="text-xl mt-10 font-times text-left text-[#ffffff]">
       Torsional strain is the angular deformation that occurs in a material (like a rod, shaft, or beam) when it's subjected to torque — a twisting force.
