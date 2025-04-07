@@ -5,17 +5,12 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "skipLibCheck": true,
-    {
-      "compilerOptions": {
-    -    "composite": true,
-    +    "composite": false,
-    -    "declaration": true,
-    +    "declaration": false,
-        "outDir": "./dist",
-      },
-      "include": ["src"]
-    } 
+    "composite": false,
+    "declaration": false,
+    "outDir": "./dist"
   },
+  "include": ["src"]
+}
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
