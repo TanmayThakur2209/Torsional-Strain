@@ -97,7 +97,7 @@ const AngleofTorsion = () => {
       {showResult && shearStrain !== null && (
         <p className="mt-4 text-lg text-[#ffffff] font-semibold p-2 rounded-2xl bg-[#070a65]">
           Shear Stain (θ):{" "}
-          <span className="text-[#ffffff]">{shearStrain} N/m²</span>
+          <span className="text-[#ffffff]">{shearStrain} radians</span>
         </p>
       )}
     </div>

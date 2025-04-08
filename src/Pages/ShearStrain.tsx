@@ -85,7 +85,7 @@ const ShearStrain = () => {
       {showResult && shearStrain !== null && (
         <p className="mt-4 text-lg text-[#ffffff] font-semibold p-2 rounded-2xl bg-[#070a65]">
           Shear Stain (γ):{" "}
-          <span className="text-[#ffffff]">{shearStrain} N/m²</span>
+          <span className="text-[#ffffff]">{shearStrain}</span>
         </p>
       )}
     </div>
