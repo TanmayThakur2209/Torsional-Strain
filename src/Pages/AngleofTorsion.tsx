@@ -60,7 +60,7 @@ const AngleofTorsion = () => {
         <input
           type="number"
           name="Torque"
-          placeholder="Enter Angle of Torsion"
+          placeholder="Enter Torque"
           value={Torque ?? ""}
           onChange={handleInputChange}
           className="w-full p-2 mb-3 border rounded"
@@ -79,7 +79,7 @@ const AngleofTorsion = () => {
         <input
           type="number"
           name="SM"
-          placeholder="Enter distance from the centre"
+          placeholder="Enter Shear Modulus"
           value={SM ?? ""}
           onChange={handleInputChange}
           className="w-full p-2 mb-3 border rounded"
