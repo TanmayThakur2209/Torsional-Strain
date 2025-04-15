@@ -45,7 +45,7 @@ const AngleofTorsion = () => {
         onSubmit={handleSubmit}
         className="bg-radial from-[#b4bad7] to-[#081d85] p-6 rounded-lg shadow-lg w-80"
       >
-        <h2 className="text-xl font-bold mb-4 text-center">Shear Strain</h2>
+        <h2 className="text-xl font-bold mb-4 text-center">Angle of Torsion</h2>
 
         <input
           type="number"
